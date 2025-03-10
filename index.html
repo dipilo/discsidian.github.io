@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Graph View</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <nav>
+        <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#graph">Graph View</a></li>
+        </ul>
+    </nav>
+    <section id="home">
+        <h1>Welcome to the Home Page</h1>
+        <p>Click on the Graph View link to navigate to the graph view.</p>
+    </section>
+    <section id="graph">
+        <h1>Graph View</h1>
+        <p>This is where the graph will be displayed.</p>
+    </section>
+    <button class="dropdown-btn" onclick="toggleDropdown('graph-dropdown')">Obsidian Graph View</button>
+    <div id="graph-dropdown" class="dropdown-content">
+        <div class="drag-handle">Drag to resize</div>
+        <iframe src="lib/scripts/graph-view.html" class="resizable-iframe"></iframe>
+    </div>
+    <script src="drag-resize.js"></script>
+    <script src="dropdown.js"></script>
+</body>
+</html>
