@@ -1,2 +1,2 @@
-# DiscSidian.github.io
+# discsidian.github.io
  
